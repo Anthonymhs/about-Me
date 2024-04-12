@@ -8,14 +8,12 @@ Construí una pagina para quien quisiera conocer un poco más de mi.
 
 ### Enlaces y Recursos
 
-* [Imagen de Lighthouse](/img/captura.png)
-* Cualquier enlace que hayas usado como referencia
+* [Imagen de Instagram](https://www.instagram.com/p/CsR2A_su-Lk/?next=%2F&img_index=1)
 
 ### Puntuación de Accesibilidad de Lighthouse
 
-* Propociona una captura de pantalla de tu puntuación después de ejecutar un informe de Accesibilidad de Lighthouse.
+* [Imagen de Lighthouse](/img/captura.png)
 
 ### Reflexiones y Comentarios
 
-* Considera incluir las respuestas a las preguntas a tu registro de aprendizaje y de tus envíos previos
-* Este también es un buen lugar para reflexionar sobre las herramientras y recursos que utilizaste y aprendiste
+Tal vez me estanque un poco, intente tomarmelo con rapidez para que me alcanzara el tiempo, pero no quiere decir que no lo disfrute, quiero volver a hacerlo, fue un buen laboratorio, estas son las cosas que me animan a querer más
