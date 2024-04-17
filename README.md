@@ -13,6 +13,7 @@ Construí una pagina para quien quisiera conocer un poco más de mi.
 ### Puntuación de Accesibilidad de Lighthouse
 
 * [Imagen de Lighthouse](/img/captura.png)
+* [Lighthouse Lab 3](/img/Lighthouse%20lab%203.jpg)
 
 ### Reflexiones y Comentarios
 
