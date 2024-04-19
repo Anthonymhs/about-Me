@@ -3,57 +3,31 @@
 
 let nombre = prompt('Por favor, ingresa tu nombre:');
 
-alert('Hola, un gusto. ' + nombre);
+alert('Hola, un gusto ' + nombre);
 
 let score=0;
-
-function preguntaUno (){
-    let meGustaBaskell = prompt('¿Me gusta el basketball? (si/no)');
+function hacerPregunta(pregunta) {
+    let respuesta = prompt(pregunta + ' (si/no)').toLowerCase();
     console.log();
-    if (meGustaBaskell.toLowerCase() === 'si') {
-        alert('Es verdad, si me gusta.');
-        // console.log("Sabe que me gusta el baskell");
+    if (respuesta === 'si') {
+        alert('Es verdad, sí me gusta.');
+        console.log('Sabe que me gusta ' + pregunta.toLowerCase());
         score++;
-    } else if (meGustaBaskell.toLowerCase() === 'no') {
-        alert('Que pena, en verdad si me gusta');
-        console.log('No sabe que me gusta el baskell');
+    } else if (respuesta === 'no') {
+        alert('Que pena, en verdad sí me gusta ' );
+        console.log('No sabe que me gusta ' + pregunta.toLowerCase());
     }
 }
-function preguntaDos(){
-    let meGustaLeer = prompt('¿Me gusta leer? (si/no)');
-    if (meGustaLeer.toLowerCase() === 'si') {
-        alert('Es verdad, si me gusta.');
-        score++;
-        console.log('Sabe que me gusta leer');
-    } else if (meGustaLeer.toLowerCase() === 'no') {
-        alert('Que pena, en verdad si me gusta leer');
-        console.log('no sabe');
-    } 
+let preguntas = [
+    '¿Me gusta el basketball?',
+    '¿Me gusta leer?',
+    '¿Me gusta el cine?',
+    '¿Me gustan los video juegos?',
+    'Si ya sabemos que me gusta y que no me gusta, dependiendo de eso, ¿Crees que soy alguien de ver documentales?'
+];
+for (let i = 0; i < preguntas.length; i++) { /*dry*/
+    hacerPregunta(preguntas[i]);
 }
-function preguntaTres(){
-    let meGustaElCine = prompt('¿Me gusta el cine? (si/no)');
-    if (meGustaElCine.toLowerCase() === 'si') {
-        alert('Es verdad, si me gusta.');
-        console.log('Sabe que me gusta el cine');
-        score++;
-    } else if (meGustaElCine.toLowerCase() === 'no'){
-        alert('Que pena, en verdad si me gusta ver peliculas');
-        console.log('No sabe que me gusta el cine');
-    }
-}
-function preguntaCuatro(){
-    let preguntaFinal = prompt('Si ya sabemos que me gusta y que no me gusta, dependiendo de eso, ¿Crees que soy alguien de ver futbol? (si/no)');
-    if (preguntaFinal.toLowerCase() === 'si') {
-        alert('Pues no amigo/a, no veo partidos de futbol');
-        console.log('Me conoce bien');
-    } else if (preguntaFinal.toLowerCase() === 'no'){
-        alert('Perfecto, ya nos conocemos mejor');
-        console.log('No me conoce muy bien');
-        score++;
-    }
-}
-
-preguntaUno(), preguntaDos(), preguntaTres(), preguntaCuatro ();
 
 let añoDeNacimiento ;
 let attempts = 0;
@@ -67,18 +41,18 @@ while (añoDeNacimiento != 2001 && attempts < 4) {
         alert ('No soy tan joven');
         console.log('No soy tan joven');
     } else {
-        alert ('Es correcto')
-        console.log('Es correcto')
+        alert ('Es correcto');
+        console.log('Es correcto');
         score++;
         break;
-    }´
+    }
     attempts++;
     if(attempts=4){
-        alert('te quedastes si nintetno la res')
+        alert('Te quedaste sin intentos!')
     }
 }
-console.log ('Nací el 2001')
-alert ('Nací el 2001')
+console.log ('Respuesta: Nací el 2001');
+alert ('Respuesta: Nací el 2001');
 
 function preguntaSiete() {
     let animalesFavoritos = ['perro','gato','hamster'];
