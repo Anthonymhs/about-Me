@@ -1,52 +1,138 @@
 
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-}
-
-h1 {
-    margin: 0; 
-    font-size: 40px; 
-    font-weight: bold; 
-    color: #4b4141; 
-    text-transform: uppercase; 
-    text-align: center;
-    letter-spacing: 2px;
-}
-
-h2 {
-    color: #333;
+    box-sizing: border-box;
 }
 
 header {
-    background-color: #a79696;
+    background-color: #333;
+    color: #cfd1d0;
+    text-align: center;
     padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 100; 
 }
+
+body main {
+    margin-top: 100px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex; 
+    align-items: flex-start; 
+}
+
 
 header img {
-    width: 100px;
-    margin-right: 250px;
+    width: 100px; 
+    height: auto;
+    border-radius: 10px 50%;
+    width: 100px; 
+    border: 15px solid #333;
 }
 
-.main {
-    padding: 20px;
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 15px;
 }
 
-.aboutme {
-    max-width: 600px;
-    margin: auto;
+main {
+    padding: 40px 20px;
 }
 
-.aboutme ul {
-    list-style-type: none;
-    padding: 0;
+section {
+    margin-bottom: 40px;
 }
 
-.aboutme ul li {
+h2 {
+    font-size: 24px;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p, ul, ol, li {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.aboutme, .topLugaresPorVisitar, .experienciaLaboralyEducacion {
+    animation: fadeInUp 0.8s ease both;
+}
+
+footer {
+    animation: fadeInUp 0.8s ease both;
+}
+
+.aboutme {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.topLugaresPorVisitar {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.experienciaLaboralyEducacion {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
 footer {
     background-color: #333;
     color: #fff;
@@ -54,8 +140,11 @@ footer {
     padding: 20px 0;
 }
 
-footer p:hover {
-    text-decoration: underline;
-    color: inherit;
+footer a {
+    color: #fff;
     text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }

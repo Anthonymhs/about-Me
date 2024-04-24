@@ -17,11 +17,15 @@ header, footer {
     padding: 20px 0;
 }
 
-header img {
+
+header img, aboutme p{
     border-radius: 50%;
     width: 150px;
     height: 150px;
     margin-bottom: 10px;
+    position: fixed;
+    top: 20px; /* ajusta según sea necesario */
+    left: 20px; /* ajusta según sea necesario */
 }
 
 main {

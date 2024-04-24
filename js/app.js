@@ -45,7 +45,6 @@ while (añoDeNacimiento !== 2001 && attempts < 4) {
     }
     attempts++;
     if(attempts === 4) {
-        alert('Te quedaste sin intentos');
     }
 }
 
