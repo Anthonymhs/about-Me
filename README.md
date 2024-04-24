@@ -21,3 +21,9 @@ Tal vez me estanque un poco, intente tomarmelo con rapidez para que me alcanzara
 **Laboratorio 03**
 
 Creo que es algo que si no le pongo practica facilmente se me podría olvidar, necesito reforzar la logica de los bucles y JS. pero en conclusión una vez más fue muy emocionante.
+
+**Pair Programming**
+Aquí:
+Navigator: Anthony Hernandez
+Driver: Eva Vargas
+

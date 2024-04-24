@@ -3,9 +3,10 @@
 
 let nombre = prompt ('Por favor, ingresa tu nombre:');
 
-alert('Hola, un gusto. ' + nombre);
+alert('Hola, un gusto ' + nombre);
 
 let score=0;
+<<<<<<< HEAD
 
 function hacerPregunta(pregunta) {
     let respuesta = prompt(pregunta + ' (si/no)').toLowerCase();
@@ -17,6 +18,30 @@ function hacerPregunta(pregunta) {
     }
 }
 
+=======
+function hacerPregunta(pregunta) {
+    let respuesta = prompt(pregunta + ' (si/no)').toLowerCase();
+    console.log();
+    if (respuesta === 'si') {
+        alert('Es verdad, sí me gusta.');
+        console.log('Sabe que me gusta ' + pregunta.toLowerCase());
+        score++;
+    } else if (respuesta === 'no') {
+        alert('Que pena, en verdad sí me gusta ' );
+        console.log('No sabe que me gusta ' + pregunta.toLowerCase());
+    }
+}
+let preguntas = [
+    '¿Me gusta el basketball?',
+    '¿Me gusta leer?',
+    '¿Me gusta el cine?',
+    '¿Me gustan los video juegos?',
+    'Si ya sabemos que me gusta y que no me gusta, dependiendo de eso, ¿Crees que soy alguien de ver documentales?'
+];
+for (let i = 0; i < preguntas.length; i++) { /*dry*/
+    hacerPregunta(preguntas[i]);
+}
+>>>>>>> 1c62f60c08319ff7e6e769ac6551057776cbac84
 
 let preguntas = [
     '¿Me gusta el basketball?',
@@ -40,16 +65,30 @@ while (añoDeNacimiento !== 2001 && attempts < 4) {
     } else if (añoDeNacimiento > 2001) {
         alert('No soy tan joven');
     } else {
+<<<<<<< HEAD
         alert('Es correcto');
+=======
+        alert ('Es correcto');
+        console.log('Es correcto');
+>>>>>>> 1c62f60c08319ff7e6e769ac6551057776cbac84
         score++;
         break;
     }
     attempts++;
+<<<<<<< HEAD
     if(attempts === 4) {
         alert('Te quedaste sin intentos');
     }
 }
 alert('Nací en 2001');
+=======
+    if(attempts=4){
+        alert('Te quedaste sin intentos!')
+    }
+}
+console.log ('Respuesta: Nací el 2001');
+alert ('Respuesta: Nací el 2001');
+>>>>>>> 1c62f60c08319ff7e6e769ac6551057776cbac84
 
 function preguntaSiete() {
     let animalesFavoritos = ['perro','gato','hamster'];
